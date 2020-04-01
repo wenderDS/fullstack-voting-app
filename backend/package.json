@@ -1,0 +1,17 @@
+{
+  "name": "backend-voting",
+  "version": "1.0.0",
+  "description": "API for voting app",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/index.js"
+  },
+  "author": "@wenderDS",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
