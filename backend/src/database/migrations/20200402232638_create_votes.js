@@ -1,7 +1,7 @@
-exports.up = function(knex) {
+exports.up = function (knex) {
   return knex.schema.createTable("votes", (table) => {
     table.increments("id");
-    table.date("data").notNullable();
+    table.date("date").notNullable();
     table.integer("status", 1).notNullable();
 
     table.string("user_id").notNullable();
@@ -12,6 +12,6 @@ exports.up = function(knex) {
   });
 };
 
-exports.down = function(knex) {
+exports.down = function (knex) {
   return knex.schema.dropTable("votes");
 };
